@@ -2,25 +2,20 @@ def number():
     lmao = open("poopycumcum.txt")
         
     y = ""
-    
-    #numl = ['o', 't', "f", "s", "e", "n"]
 
     poop = []
 
-    #splits file into lines and makes range of the length of the string to access characters
+    # splits file into lines and makes range of the length of the string to access characters
     for line in lmao:
         for x in range(len(line)):
-
-            #checks if character is not the newline character
             if line[x] != "\n":
 
-                #checks if it is numeric and then adds it to a string y 
+                # checks if it is numeric and then adds it to a string y 
                 if line[x].isnumeric():
-
                     y = y + line[x]
                     continue
                 
-                #checks for any starting letters of single digit numbers and then checks string for the full word and adds it y
+                # checks for any starting letters of single digit numbers and then checks string for the full word and adds it y
                 if line[x] == 'o' or line[x] == 't' or line[x] == 'f' or line[x] == 's' or line[x] == 'e' or line[x] == 'n':
                     if line.startswith('one', x):
                         y = y + '1'
@@ -49,9 +44,8 @@ def number():
                     if line.startswith('nine', x):
                         y = y + '9'
                         continue
-                        
-                        
 
+            # takes first and last digit from y string converts into an int and add to poop list
             else:
                 y = int(y[0] + y[-1])
                 poop.append(y)
@@ -59,14 +53,6 @@ def number():
 
     return poop
 
-
-def adder(stinky):
-    y = 0
-    for x in stinky:
-        y = y + x
-    return y
-
-
 a = number()
 
-print(adder(a))
+print(sum(a))
