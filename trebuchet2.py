@@ -1,4 +1,10 @@
 def number():
+    """ 
+    Sample of file
+    23krgjlpone
+    kfxone67bzb2
+    8jjpseven
+    """
     lmao = open("poopycumcum.txt")
         
     y = ""
