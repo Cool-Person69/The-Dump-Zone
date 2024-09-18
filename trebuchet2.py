@@ -1,6 +1,6 @@
 def number():
     """ 
-    Sample of file
+    Sample of file:
     23krgjlpone
     kfxone67bzb2
     8jjpseven
